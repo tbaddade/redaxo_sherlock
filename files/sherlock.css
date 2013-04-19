@@ -1,0 +1,273 @@
+/*
+ * Sherlock Icons
+ *
+ * Sherlock
+ * http://www.iconfinder.com/icondetails/6249/128/agent_detective_hat_icon
+ * License: GPL
+ * Designer Alessandro Rei - http://www.kde-look.org/usermanager/search.php?username=mentalrey
+ *
+ *
+ * Magnify
+ * http://www.iconfinder.com/icondetails/103857/64/find_glass_magnifying_search_icon
+ * License: Free for commercial use
+ * Designer Iconleak - http://iconleak.com/product/free-windows-icon-atrous/
+ *
+ *
+ * Enter
+ * By Font Lucida Grande Bold
+ *
+ *
+*/
+
+div#rex-navi-logout {
+    margin-bottom: 0;
+}
+
+.sherlock,
+.sherlock-finder,
+#sherlock-watson,
+#rex-navi-page-sherlock a {
+    background-image: url(logo.png);
+}
+h1 .sherlock {
+    padding-left: 46px;
+    background-position: 0 50%;
+    background-size: 36px 36px;
+}
+#rex-navi-page-sherlock a {
+    background-position: 6em 50%;
+    background-size: 24px 24px;
+}
+
+
+.sherlock-finder {
+    clear: both;
+    display: block;
+    margin: 0 auto 36px auto;
+    width: 40px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, .2);
+    background-position: 50% 50%;
+    background-size: 36px 36px;
+    border: 1px solid #E0E0E0;
+    border-top: 0;
+    -webkit-border-radius: 0 0 5px 5px;
+            border-radius: 0 0 5px 5px;
+    -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
+            box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
+    text-indent: -1000em;
+    cursor: pointer;
+}
+
+
+
+
+#sherlock-finder {
+    display: none;
+    position: relative;
+    clear: both;
+    float: left;
+    height: 216px;
+    width: 100%;
+    background-color: #fff;
+    overflow-x: scroll;
+    overflow-y: hidden !important;
+    -webkit-box-shadow: 0px 8px 8px -8px rgba(0, 0, 0, .5);
+    box-shadow: 0px 8px 8px -8px rgba(0, 0, 0, .5);
+}
+#sherlock-finder .column {
+    float: left !important;
+    display: block;
+    min-width: 180px;
+    height: 200px;
+    min-height: 200px;
+    max-height: 200px;
+    margin: 0;
+    padding: 1px 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    /* Safari Scrollbar Bug */
+    background: #ffffff;
+    background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ffffff));
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 100%);
+    background: -o-linear-gradient(top,  #ffffff 0%,#ffffff 100%);
+    background: -ms-linear-gradient(top,  #ffffff 0%,#ffffff 100%);
+    background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+}
+#sherlock-finder [data-remote],
+#sherlock-finder .sherlock-entry {
+    display: block;
+    padding: 3px 5px 3px 10px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+#sherlock-finder .column [data-remote]:after,
+#sherlock-finder .column .sherlock-entry:after {
+    content: '';
+    display: inline-block;
+    float: right;
+    width: 10px;
+    height: 1em;
+    margin-left: 10px;
+    background-image: url(triangle.png);
+    background-position: 50% 50%;
+}
+#sherlock-finder .column [data-remote].selected,
+#sherlock-finder .column .sherlock-entry.selected {
+    background-color: #DFE9E9;
+}
+#sherlock-finder .column:nth-last-child(2) [data-remote].selected,
+#sherlock-finder .column:nth-last-child(2) [data-remote].selected a,
+#sherlock-finder .column:nth-last-child(2) .sherlock-entry.selected,
+#sherlock-finder .column:nth-last-child(2) .sherlock-entry.selected a {
+    background-color: #3C9ED0;
+    color: #fff;
+}
+#sherlock-finder .column [data-remote] a,
+#sherlock-finder .column a.sherlock-link {
+    margin: 0 10px;
+    font-size: 11px;
+}
+
+
+#sherlock-finder .column .sherlock-view {
+    display: block;
+    max-width: 400px;
+    min-height: 200px;
+    padding: 0 10px;
+}
+
+#sherlock-finder .column dl {
+    clear: both;
+    display: block;
+}
+#sherlock-finder .column dt {
+    clear: both;
+    display: block;
+    padding: 2px 0;
+    color: #808080;
+    font-size: 11px;
+    text-align: left;
+}
+#sherlock-finder .column dd {
+    display: block;
+    padding: 2px 0 2px 1em;
+    word-wrap: break-word;
+}
+#sherlock-finder .column dd pre {
+    font-size: 12px;
+}
+
+
+
+#sherlock-watson {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    width: 600px;
+    margin-left: -300px;
+    padding: 10px;
+    background-color: #E0E0E0;
+    background-position: 520px 50%;
+    background-size: 50px 50px;
+    border: 10px solid rgba(0, 0, 0, .5);
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, .5);
+            box-shadow: 0 0 8px 0 rgba(0, 0, 0, .5);
+       -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    z-index: 1000;
+}
+#sherlock-watson form {
+    margin-right: 60px;
+}
+#sherlock-watson input[type="text"] {
+    width: 100%;
+    padding: 5px 10px;
+    background-color: #D0D0D0;
+    border: 0;
+       -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 36px;
+}
+
+
+.twitter-typeahead {
+    width: 100%;
+}
+.twitter-typeahead .tt-query,
+.twitter-typeahead .tt-hint {
+    margin-bottom: 0;
+}
+
+.tt-dropdown-menu {
+   /*
+    min-width: 160px;
+    margin-top: 2px;
+    padding: 5px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.2);
+    *border-right-width: 2px;
+    *border-bottom-width: 2px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+*/
+
+    width: 600px;
+    margin: 10px 0 0 -20px;
+    padding: 10px;
+    background-color: #F0F0F0;
+    border: 10px solid rgba(0, 0, 0, .5);
+    border-top: 0;
+    -webkit-border-radius: 0 0 5px 5px;
+            border-radius: 0 0 5px 5px;
+    -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, .5);
+            box-shadow: 0 0 8px 0 rgba(0, 0, 0, .5);
+       -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    z-index: 1000;
+}
+
+.tt-suggestion {
+    display: block;
+    padding: 8px 50px 8px 10px;
+    border-bottom: 1px solid #E0E0E0;
+    font-size: 18px;
+}
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #E0E0E0;
+    background-image: url(enter.png);
+    background-position: 520px 2px;
+    background-size: 32px 32px;
+    color: #000;
+}
+.tt-suggestion.tt-is-under-cursor .sherlock-no-results {
+    display: block;
+    margin: -8px -50px -8px -10px;
+    padding: 8px 50px 8px 10px;
+    background-color: #F0F0F0;
+}
+
+.tt-suggestion.tt-is-under-cursor a {
+    color: #000;
+}
+
+.tt-suggestion p {
+    margin: 0;
+}
