@@ -100,7 +100,9 @@ if (!class_exists('rex')) {
 
                 <script type="text/javascript">
                     <!--
-                    var rex = ' . $js_properties . ';
+                    if (typeof(rex) == "undefined") {
+                        var rex = ' . $js_properties . ';
+                    }
                     //-->
                 </script>';
         }
