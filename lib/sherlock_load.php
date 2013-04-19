@@ -37,9 +37,6 @@ class sherlock_load
             }
         }
 
-
-        rex_fragment::addDirectory(rex_path::addon($myaddon, 'fragments'));
-        rex_i18n::addDirectory(rex_path::addon($myaddon, 'lang'));
     }
 
     static function check_install()
@@ -53,7 +50,7 @@ class sherlock_load
         // Check AddOns und Versionen ------------------------------------------
         require_once $basedir . '/vendor/b/lib/check.php';
 
-        $min_php_version    = REX_MIN_PHP_VERSION;
+        $min_php_version    = '5.4';
         $min_redaxo_version = '4.5';
         $addons_needed      = array();
 
