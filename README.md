@@ -12,7 +12,7 @@ Stellt einen Finder bereit der
 
 
 
-registiert sich an Watson
+registiert sich an [Watson](https://github.com/tbaddade/redaxo_watson)
 --------------------------------------------
 
 ### Suchen
