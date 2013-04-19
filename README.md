@@ -1,4 +1,3 @@
-
 Sherlock
 ============================================
 
@@ -29,4 +28,7 @@ registiert sich an Watson
 * home :: zur Startseite im Backend
 * logout :: REDAXO logout
 
+
+Screenshot
+--------------------------------------------
 ![Sherlock Finder](http://blumbeet.com/screens/github/sherlock/finder.png)
