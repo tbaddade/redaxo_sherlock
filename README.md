@@ -11,6 +11,11 @@ Stellt einen Finder bereit der
 * alle Artikel eines Templates anzeigt
 
 
+Voraussetzungen
+-----------------
+**REDAXO** 4.5
+**PHP:** 5.4
+
 
 Screenshot
 --------------------------------------------
