@@ -99,21 +99,26 @@ h1 .sherlock {
 }
 #sherlock-finder [data-remote],
 #sherlock-finder .sherlock-entry {
+    position: relative;
     display: block;
-    padding: 3px 5px 3px 10px;
+    padding: 3px 20px 3px 10px;
     white-space: nowrap;
     cursor: pointer;
 }
 #sherlock-finder .column [data-remote]:after,
 #sherlock-finder .column .sherlock-entry:after {
     content: '';
-    display: inline-block;
-    float: right;
+    position: absolute;
+    right: 5px;
+    top: 0;
+
+    display: block;
     width: 10px;
-    height: 1em;
+    height: 100%;
     margin-left: 10px;
     background-image: url(triangle.png);
     background-position: 50% 50%;
+    background-repeat: no-repeat;
 }
 #sherlock-finder .column [data-remote].selected,
 #sherlock-finder .column .sherlock-entry.selected {
