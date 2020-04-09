@@ -80,7 +80,7 @@ class Structure extends Search
             if (!$article->isOnline()) {
                 continue;
             }
-            if (!\rex_ycom_auth::checkPerm($article)) {
+            if (\rex_plugin::get('ycom', 'auth')->isAvailable() & !\rex_ycom_auth::checkPerm($article)) {
                 continue;
             }
 
