@@ -29,6 +29,11 @@ class SearchFilter
         return $this->current;
     }
 
+    public function getKey(): ?string
+    {
+        return $this->key;
+    }
+
     public function handleRequest(): self
     {
         $current = \rex_request($this->key, 'string', null);

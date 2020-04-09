@@ -53,8 +53,9 @@ $searchFilter = SearchFilter::create()->handleRequest();
 
 echo sprintf(
     '<form action="%s" method="get">
-        <input name="q" value="%s" type="text" placeholder="Sherlock: Stagnation macht meinen Geist rebellisch! Geben Sie mir Probleme, geben Sie mir Arbeit!" />
+        <input name="%s" value="%s" type="text" placeholder="Sherlock: Stagnation macht meinen Geist rebellisch! Geben Sie mir Probleme, geben Sie mir Arbeit!" />
     </form>', 
     rex_getUrl(), 
+    $searchFilter->getKey(),
     rex_escape($searchFilter->getCurrent())
 );
