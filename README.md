@@ -42,3 +42,19 @@ if ($searchFilter->getCurrent()) {
 
 echo $content;
 ```
+
+
+```php
+<?php
+
+use Sherlock\SearchFilter;
+
+$searchFilter = SearchFilter::create()->handleRequest();
+
+echo sprintf(
+    '<form action="%s" method="get">
+        <input name="q" value="%s" type="text" placeholder="Sherlock: Stagnation macht meinen Geist rebellisch! Geben Sie mir Probleme, geben Sie mir Arbeit!" />
+    </form>', 
+    rex_getUrl(), 
+    rex_escape($searchFilter->getCurrent())
+);
