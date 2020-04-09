@@ -11,7 +11,15 @@
                 <?php if ($result->getRaw()): ?>
                     <?= $result->getRaw() ?>
                 <?php else: ?>
-                    <strong><?= $result->getTitle() ?></strong> <?= $result->getText() ?><?= Yakme\Html::getUrlLink($result->getUrl(), ['class' => 'search-result-link']) ?>
+                    <?php if($result->getTitle()): ?>
+                        <strong><?= $result->getTitle() ?></strong>
+                    <?php endif; ?>
+
+                    <?= $result->getText() ?>
+
+                    <?php if($result->getUrl()): ?>
+                        <a class="search-result-link" href="<?= $result->getUrl() ?>"><?= $result->getUrl() ?></a>
+                    <?php endif; ?>
                 <?php endif; ?>
             </li>
             <?php endforeach; ?>
